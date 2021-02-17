@@ -78,7 +78,9 @@ $breakpoints: (
 }
 
 
-
+.section--bg-color_primary{
+  background: $primary-color;
+}
 
 .section__title{
     font-size: 2.25em;
@@ -514,9 +516,7 @@ body.fixed{
 //  introduce
 // =======================
 
-.introduce{
-  background: $primary-color;
-}
+
 
 .introduce__ex-wrapper{
   display: flex;
@@ -640,4 +640,74 @@ body.fixed{
   padding: 0.6563em 2.75em;
   line-height: 1.6875;
   border: 1px solid #fff;
+}
+
+// =======================
+//  example
+// =======================
+
+.example-items{
+  display: flex;
+}
+
+.example-item{
+  flex: 0 1 31.1111%;
+  margin-right: 3.3333%;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.example-item__comment{
+  line-height: 1.8125;
+  color: #fff;
+  margin-bottom: 0.4063em;
+}
+
+.example-item__img-wrapper{
+  background: #fff;
+  text-align: center;
+  margin-bottom: 1em;
+  padding-top: 61.0714%;
+  position: relative;
+}
+
+.example-item__img{
+  width: 44.6429%;
+  height: 81.8713%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.example-item__info{
+  display: flex;
+  margin-bottom: 0.625em;
+}
+
+.example-item__job{
+  background: #fff;
+  flex: 0 1 35.7143%;
+  margin-right: 2.8571%;
+  line-height: 1.8125;
+  padding: 0.0938em 0 0.0938em 0.625em;
+  font-weight: 500;
+}
+
+.example-item__name{
+  background: #fff;
+  flex: 0 1 61.4286%;
+  line-height: 1.8125;
+  padding: 0.0938em 0 0.0938em 0.875em;
+  font-weight: 500;
+}
+
+.example-item__result{
+  background: #fff;
+  flex: 0 1 61.4286%;
+  line-height: 1.8125;
+  padding: 0.0938em 0 0.0938em 0.875em;
+  font-weight: 500;
 }
