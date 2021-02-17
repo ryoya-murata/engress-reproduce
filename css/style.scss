@@ -616,3 +616,28 @@ body.fixed{
   line-height: 1.6875;
   font-weight: 500;
 }
+
+// =======================
+//  price
+// =======================
+
+.price__contents{
+  background: url(../images/price.png);
+  padding: 3.4063em 0 3.3125em;
+}
+
+.price__title{
+  font-size: 1.625em;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0.7885em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.price__button{
+  color: #fff;
+  padding: 0.6563em 2.75em;
+  line-height: 1.6875;
+  border: 1px solid #fff;
+}
