@@ -564,3 +564,55 @@ body.fixed{
   line-height: 1.7222;
 }
 
+// =======================
+//  strength
+// =======================
+
+.strength-item{
+  display: flex;
+  margin-bottom: 3.75em;
+
+  &:nth-of-type(2n){
+    flex-direction: row-reverse;
+
+
+  }
+}
+
+.strength-item__intro-wrapper{
+  flex: 0 1 55.5556%;
+}
+
+.strength-item__intro-wrapper--margin_right{
+  margin-right: 5.5556%;
+}
+
+.strength-item__intro-wrapper--margin_left{
+  margin-left: 5.5556%;
+}
+
+.strength-item__img-wrapper{
+  flex: 0 1 38.8889%
+}
+
+.strength-item__tag{
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1.6667;
+  padding: 0.3333em 2.0833em 0.5em 2.1667em;
+  color: #fff;
+  background: $color-yellow;
+  margin-bottom: 1.7813em;
+}
+
+.strength-item__title{
+  font-size: 1.625em;
+  line-height: 1.3846;
+  font-weight: bold;
+  margin-bottom: 1.0385em;
+}
+
+.strength-item__desc{
+  line-height: 1.6875;
+  font-weight: 500;
+}
