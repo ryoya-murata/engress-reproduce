@@ -463,3 +463,49 @@ body.fixed{
     overflow-y: hidden;
 }
 
+
+// =======================
+//  first view
+// =======================
+
+.first-view{
+  margin-top: 5em;
+  padding-top: 6.7188em;
+  padding-bottom: 5.0313em;
+  background: url(../images/teachers.png) no-repeat center top / cover;
+}
+
+.first-view__title{
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1.3542;
+  color: #fff;
+  box-shadow:  0px 3px 3px #00000029;
+  text-align: center;
+  margin-bottom: 0.2708em;
+}
+
+.first-view__desc{
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.125em;
+  line-height: 1.7222;
+  text-align: center;
+  margin-bottom: 2.4722em;
+}
+
+.first-view__button-wrapper{
+  margin-bottom: 1.0313em;
+}
+
+.first-view__link-wrapper{
+  text-align: center;
+}
+
+.first-view__link{
+  display: inline-block;
+  line-height: 1.6875;
+  color: #fff;
+  text-decoration: underline;
+
+}
