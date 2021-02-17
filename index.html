@@ -5,16 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Engress</title>
+  <link rel="stylesheet" href="./css/destyle.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-       <div class="inner inner--wide">
+       <div class="inner inner--wide header__inner">
           <div class="header__contents-wrapper">
              <div class="header__contents">
                 <div class="header__logo-wrapper">
                   <img src="./images/logo.png" alt="Engress" class="header__logo">
                 </div><!-- /.header__logo-wrapper -->
-                <nav class="header__nav nav nav--blue">
+                <nav class="header__nav nav">
                    <ul class="menu">
                       <li class="menu__item"><a href="#" class="menu__link">ホーム</a><!-- /.menu__link --></li><!-- /.menu__item -->
                       <li class="menu__item"><a href="#" class="menu__link">お知らせ</a><!-- /.menu__link --></li><!-- /.menu__item -->
@@ -23,22 +25,22 @@
                    </ul><!-- /.menu -->
                 </nav><!-- /.header__nav nav nav--blue -->
              </div><!-- /.header__contents -->
-             <div class="header__infomation-wrapper">
-                <div class="header__information">
+             <div class="header__info-wrapper">
+                <div class="header__info">
                    <p class="header__sale-time">平日08:00〜20:00</p><!-- /.header__sale-time -->
                    <p class="header__tel tel tel--color_primary"><img src="./images/tel.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.header__tel tel tel--color_primary -->
-                </div><!-- /.header__information -->
-                <div class="header__buttons-wrapepr">
+                </div><!-- /.header__info -->
+                <div class="header__buttons-wrapper">
                    <div class="header__button-wrapper">
-                      <a href="#" class="button button--color_yellow button--shape_square button--size_s">資料請求</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
+                      <a href="#" class="button button--color_yellow button--shape_square button--size_s button--request">資料請求</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
                    </div><!-- /.header__button-wrapper -->
                    <div class="header__button-wrapper">
-                     <a href="#" class="button button--color_primary button--shape_square button--size_s">お問い合わせ</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
+                     <a href="#" class="button button--color_primary button--shape_square button--size_s button--inquiry">お問い合わせ</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
                   </div><!-- /.header__button-wrapper -->
-                </div><!-- /.header__buttons-wrapepr -->
+                </div><!-- /.header__buttons-wrapper -->
              </div><!-- /.header__infomation-wrapper -->
           </div><!-- /.header__contents-wrapper -->
-       </div><!-- /.inner inner--wide -->
+       </div><!-- /.inner inner--wide header__inner -->
     </header><!-- /.header -->
 
     <div class="first-view">
@@ -54,7 +56,7 @@
 
     <section class="section section--color_primary introduce">
        <div class="inner inner--middle">
-          <h2 class="section__title section__title--color_white"></h2><!-- /.section__title section__title--color_white -->
+          <h2 class="section__title section__title--center section__title--color_white"></h2><!-- /.section__title section__title--color_white -->
           <div class="introduce__ex-wrapper">
              <p class="introduce__ex-item">勉強の習慣が<br> 身についていない</p><!-- /.introduce__ex-item -->
              <p class="introduce__ex-item">勉強しているはず<br> なのに点数が伸びない</p><!-- /.introduce__ex-item -->
@@ -71,7 +73,7 @@
 
     <section class="section strength">
        <div class="inner inner--middle">
-          <h2 class="section__title section__title--color__primary">TOEFL対策に特化したEngress3つの強み</h2><!-- /.section__title section__title--color__primary -->
+          <h2 class="section__title section__title--center section__title--color__primary">TOEFL対策に特化したEngress3つの強み</h2><!-- /.section__title section__title--color__primary -->
           <div class="strength-items strength__items-wrapper">
              <div class="strength-item strength__items_item">
                 <div class="strength-item__intro-wrapper">
@@ -120,7 +122,7 @@
 
     <section class="section section--bg-color_primary example">
        <div class="inner inner--middle">
-          <h2 class="section__title section__title--color_white example__title">TOEFL成功事例</h2><!-- /.section__title section__title--color_white example__title -->
+          <h2 class="section__title section__title--center section__title--color_white example__title">TOEFL成功事例</h2><!-- /.section__title section__title--color_white example__title -->
          <div class="example-items">
             <div class="example-item example-items__item">
                <p class="example-item__comment">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p><!-- /.example-item__comment -->
@@ -161,7 +163,7 @@
 
     <section class="section flow">
        <div class="inner inner--middle">
-          <h2 class="section__title section__title--color_primary">ご利用の流れ</h2><!-- /.section__title section__title--color_primary -->
+          <h2 class="section__title section__title--center">ご利用の流れ</h2><!-- /.section__title -->
           <div class="flow-items">
              <div class="flow-item flow-items__item">
                 <div class="flow-item__order">01</div><!-- /.flow-item__order -->
@@ -240,7 +242,7 @@
 
     <div class="posts-contents">
        <section class="section blog posts-contents__blog">
-          <h2 class="section__title section__title--color_primary section__title--left">ブログ</h2><!-- /.section__title section__title--color_primary section__title--left -->
+          <h2 class="section__title section__title--left section__title--left">ブログ</h2><!-- /.section__title section__title--left -->
           <div class="blog-items">
             <div class="blog-item blog-items_item">
                <a href="#" class="blog-item__link">
@@ -282,6 +284,7 @@
        </section><!-- /.section blog posts-contents__blog -->
 
        <section class="section news posts-contents__news">
+          <h2 class="section__title section__title--left">お知らせ</h2><!-- /.section__title section__title--left -->
           <div class="news-items">
             <div class="news-item news-items__item">
                <a href="#" class="news-item__link">
