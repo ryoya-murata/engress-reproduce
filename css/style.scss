@@ -509,3 +509,58 @@ body.fixed{
   text-decoration: underline;
 
 }
+
+// =======================
+//  introduce
+// =======================
+
+.introduce{
+  background: $primary-color;
+}
+
+.introduce__ex-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.5313em;
+}
+
+.introduce__ex-item{
+  font-size: 1.125em;
+  line-height: 2.1667;
+  margin-right: 3.1667em;
+  text-align: center;
+  color: #fff;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.introduce__contents-wrapper{
+  padding: 0.6875em 1em 0.75em;
+  background: #fff;
+}
+
+.introduce__contents{
+  padding: 1em 1em 1.3125em 1em;
+  border:5px solid $primary-color;
+  text-align: center;
+}
+
+.introduce__contents-title{
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 1.3889;
+  margin-bottom: 0.5em;
+}
+
+.title__caution{
+  background: linear-gradient(transparent 0px,transparent 58%, $color-yellow 58%,$color-yellow 82%,transparent 82%,transparent 100%);
+}
+
+.introduce__contents-desc{
+  font-size: 1.125em;
+  line-height: 1.7222;
+}
+
