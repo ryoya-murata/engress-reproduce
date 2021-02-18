@@ -936,3 +936,38 @@ body.fixed{
   text-decoration-color: $primary-color;
   text-decoration-thickness: 1px;
 }
+
+// =======================
+//  inquiry
+// =======================
+
+.inquiry{
+  background: url(../images/cta.png) no-repeat center center / cover;
+  padding:3.6875em 0 2.24375em;
+}
+
+.inquiry__title{
+  font-size: 2em;
+  margin-bottom: 0.5613em;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.6875;
+}
+
+.inquiry__button-wrapper {
+  margin-bottom: 1.0313em;
+}
+
+.inquiry__link-wrapper{
+  text-align: center;
+}
+
+.inquiry__link{
+  display: inline-block;
+  line-height: 1.6875;
+  color: #fff;
+  text-decoration: underline;
+  transition: all ease .3s;
+}
+
