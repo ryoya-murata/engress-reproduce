@@ -195,8 +195,9 @@ $breakpoints: (
     }
 }
 
-
-
+.display_none{
+  display: none;
+}
 
 // =======================
 //  z-index
@@ -710,4 +711,121 @@ body.fixed{
   line-height: 1.8125;
   padding: 0.0938em 0 0.0938em 0.875em;
   font-weight: 500;
+}
+
+// =======================
+//  flow
+// =======================
+
+.flow-item{
+  display: flex;
+  margin-bottom: 0.5em;
+  background: #F8F8F8;
+  align-items: center;
+}
+
+.flow-item__order{
+  flex: 0 0 64px;
+  line-height: 1.8125;
+  padding: 1.0938em 1.4375em;
+  color: #fff;
+  font-weight: bold;
+  background: $color-yellow;
+}
+
+.flow-item__title{
+  flex: 0 0 214.5px;
+  font-weight: bold;
+  font-size: 1.125em;
+  padding-left: 1.1667em;
+  height: 100%;
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 1px;
+    background: #C3C3C3;
+  }
+}
+
+.flow-item__desc{
+  padding-left: 3.3438em;
+  font-weight: 500;
+  line-height: 1.6875;
+}
+
+// =======================
+//  qanda
+// =======================
+
+.qanda-item{
+  border-bottom: 1px solid $primary-color;
+
+  &:first-of-type{
+    border-top: 1px solid $primary-color;
+  }
+}
+
+.qanda-item__question-wrapper{
+  padding-right: 1.2813em;
+}
+
+.qanda-item__question{
+  line-height: 1.6875;
+  font-weight: 500;
+  padding: 1.4375em 0;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $primary-color;
+    transition: all ease .3s;
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(90deg);
+    background: $primary-color;
+    transition: all ease .3s;
+  }
+}
+
+.qanda-item__question.open{
+  &::before{
+    display: none;
+  }
+
+  &::after{
+    transform: translateY(-50%) rotateZ(0deg);
+  }
+}
+.qanda-item__answer-wrapper{
+  background: #F8F8F8;
+  margin-bottom: 0.9688em;
+}
+
+.qanda-item__answer{
+  padding: 1.0938em 1.75em 0.5938em 1.625em;
+  font-weight: 500;
+  line-height: 1.6875;
+}
+
+.qanda-item__answer-wrapper.open{
+  display: block;
 }
