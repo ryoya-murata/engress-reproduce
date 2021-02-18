@@ -123,7 +123,7 @@ $breakpoints: (
 
   @include mq("md") {
     width: auto;
-    padding: .5em 5em;
+    padding: 0.5em 5em;
     font-size: 1.125em;
   }
 }
@@ -306,7 +306,7 @@ $layer: (
     margin-right: 0.8em;
   }
 
-  @include mq("md"){
+  @include mq("md") {
     text-align: center;
   }
 }
@@ -358,14 +358,14 @@ $layer: (
     padding-right: 1.6em;
   }
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 1em;
-    padding: .8em 4em;
+    padding: 0.8em 4em;
   }
 
-  @include mq("sm"){
-    font-size: .875em;
-    padding: .8em 3em;
+  @include mq("sm") {
+    font-size: 0.875em;
+    padding: 0.8em 3em;
   }
 }
 
@@ -379,17 +379,16 @@ $layer: (
     padding-right: 1.4em;
   }
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 1em;
-    padding: .8em 3em;
+    padding: 0.8em 3em;
   }
 
-  @include mq("sm"){
-    font-size: .875em;
-    padding: .8em 2em;
+  @include mq("sm") {
+    font-size: 0.875em;
+    padding: 0.8em 2em;
   }
-
-} 
+}
 
 // ハンバーガーメニュー
 .hamberger {
@@ -470,12 +469,12 @@ $layer: (
   transform: translateY(0);
 }
 
-.hamberger-menu__title{
+.hamberger-menu__title {
   background: $primary-color;
   color: #fff;
   font-weight: bold;
   padding-left: 1em;
-  padding: .4em 0em .4em 1em;
+  padding: 0.4em 0em 0.4em 1em;
 }
 
 .hamberger-menu__item {
@@ -495,11 +494,11 @@ $layer: (
 .hamberger-menu__link {
   width: 100%;
   text-decoration: none;
-  padding: .8em 0 ;
+  padding: 0.8em 0;
   display: block;
   position: relative;
 
-  &::after{
+  &::after {
     content: ">";
     position: absolute;
     top: 50%;
@@ -510,8 +509,8 @@ $layer: (
   }
 }
 
-.hamberger__tel{
-  padding: .4em 0 .8em 1em;
+.hamberger__tel {
+  padding: 0.4em 0 0.8em 1em;
   font-size: 1em;
 }
 
@@ -525,11 +524,11 @@ $layer: (
   padding-bottom: 5.0313em;
   background: url(../images/teachers.png) no-repeat center top / cover;
 
-  @include mq("lg"){
+  @include mq("lg") {
     margin-top: 70px;
   }
 
-  @include mq("md"){
+  @include mq("md") {
     margin-top: 50px;
   }
 }
@@ -543,7 +542,7 @@ $layer: (
   text-align: center;
   margin-bottom: 0.2708em;
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 2.255em;
   }
 }
@@ -556,7 +555,7 @@ $layer: (
   text-align: center;
   margin-bottom: 2.4722em;
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 1em;
   }
 }
@@ -586,7 +585,7 @@ $layer: (
   align-items: flex-start;
   margin-bottom: 4.5313em;
 
-  @include mq("md"){
+  @include mq("md") {
     margin-bottom: 3em;
   }
 }
@@ -602,7 +601,7 @@ $layer: (
     margin-right: 0;
   }
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 1em;
     margin-right: 2em;
   }
@@ -625,7 +624,7 @@ $layer: (
   line-height: 1.3889;
   margin-bottom: 0.5em;
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 1.25em;
   }
 }
@@ -645,7 +644,7 @@ $layer: (
   font-size: 1.125em;
   line-height: 1.7222;
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 1em;
   }
 }
@@ -662,7 +661,7 @@ $layer: (
     flex-direction: row-reverse;
   }
 
-  @include mq("md"){
+  @include mq("md") {
     flex-direction: column-reverse;
 
     &:nth-of-type(2n) {
@@ -678,7 +677,7 @@ $layer: (
 .strength-item__intro-wrapper--margin_right {
   margin-right: 5.5556%;
 
-  @include mq("md"){
+  @include mq("md") {
     margin-right: 0;
   }
 }
@@ -686,7 +685,7 @@ $layer: (
 .strength-item__intro-wrapper--margin_left {
   margin-left: 5.5556%;
 
-  @include mq("md"){
+  @include mq("md") {
     margin-left: 0;
   }
 }
@@ -694,7 +693,7 @@ $layer: (
 .strength-item__img-wrapper {
   flex: 0 1 38.8889%;
 
-  @include mq("md"){
+  @include mq("md") {
     margin-bottom: 1.5em;
   }
 }
@@ -708,7 +707,7 @@ $layer: (
   background: $color-yellow;
   margin-bottom: 1.7813em;
 
-  @include mq("md"){
+  @include mq("md") {
     margin-bottom: 1em;
   }
 }
@@ -719,9 +718,9 @@ $layer: (
   font-weight: bold;
   margin-bottom: 1.0385em;
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 1.25em;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -729,7 +728,7 @@ $layer: (
   line-height: 1.6875;
   font-weight: 500;
 
-  @include mq("sm"){
+  @include mq("sm") {
     font-size: 0.875em;
   }
 }
@@ -755,7 +754,7 @@ $layer: (
   line-height: 1.5;
   text-align: center;
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 1.125em;
   }
 }
@@ -766,8 +765,8 @@ $layer: (
   line-height: 1.6875;
   border: 1px solid #fff;
 
-  @include mq("md"){
-    padding: .4em 2em;
+  @include mq("md") {
+    padding: 0.4em 2em;
   }
 }
 
@@ -778,7 +777,7 @@ $layer: (
 .example-items {
   display: flex;
 
-  @include mq("md"){
+  @include mq("md") {
     display: block;
   }
 }
@@ -791,20 +790,18 @@ $layer: (
     margin-right: 0;
   }
 
-  @include mq("md"){
-   margin-right: 0;
-   margin-bottom: 3em;
+  @include mq("md") {
+    margin-right: 0;
+    margin-bottom: 3em;
   }
 }
-
-
 
 .example-item__comment {
   line-height: 1.8125;
   color: #fff;
   margin-bottom: 0.4063em;
 
-  @include mq("sm"){
+  @include mq("sm") {
     font-size: 0.875em;
   }
 }
@@ -839,7 +836,7 @@ $layer: (
   padding: 0.0938em 0 0.0938em 0.625em;
   font-weight: 500;
 
-  @include mq("sm"){
+  @include mq("sm") {
     font-size: 0.875em;
   }
 }
@@ -851,7 +848,7 @@ $layer: (
   padding: 0.0938em 0 0.0938em 0.875em;
   font-weight: 500;
 
-  @include mq("sm"){
+  @include mq("sm") {
     font-size: 0.875em;
   }
 }
@@ -863,7 +860,7 @@ $layer: (
   padding: 0.0938em 0 0.0938em 0.875em;
   font-weight: 500;
 
-  @include mq("sm"){
+  @include mq("sm") {
     font-size: 0.875em;
   }
 }
@@ -876,7 +873,12 @@ $layer: (
   display: flex;
   margin-bottom: 0.5em;
   background: #f8f8f8;
-  align-items: center;
+  flex-wrap: nowrap;
+  padding-right: 1em;
+
+  @include mq("md") {
+    flex-wrap: wrap;
+  }
 }
 
 .flow-item__order {
@@ -886,15 +888,29 @@ $layer: (
   color: #fff;
   font-weight: bold;
   background: $color-yellow;
+
+  @include mq("md") {
+    flex: 0 0 45px;
+    padding: 0.5em 0.8em;
+  }
+}
+
+.flow-item__title-wrapper {
+  flex: 0 0 214.5px;
+  padding-left: 1.1667em;
+  display: flex;
+  align-items: center;
+
+  @include mq("md") {
+    flex: 0 1 auto;
+  }
 }
 
 .flow-item__title {
-  flex: 0 0 214.5px;
   font-weight: bold;
   font-size: 1.125em;
-  padding-left: 1.1667em;
-  height: 100%;
   position: relative;
+  flex: 0 0 214.5px;
 
   &::after {
     content: "";
@@ -906,12 +922,33 @@ $layer: (
     width: 1px;
     background: #c3c3c3;
   }
+
+  @include mq("md") {
+    font-size: 1.125em;
+    flex: 0 1 auto;
+
+    &::after {
+      width: 0;
+    }
+  }
 }
 
 .flow-item__desc {
   padding-left: 3.3438em;
   font-weight: 500;
   line-height: 1.6875;
+  display: flex;
+  align-items: center;
+
+  @include mq("md") {
+    flex: 0 1 100%;
+    padding: 1em 0 1em 1em;
+  }
+
+  @include mq("sm") {
+    font-size: 0.875em;
+    padding: 0.8em 0 0.8em 0.8em;
+  }
 }
 
 // =======================
@@ -928,12 +965,17 @@ $layer: (
 
 .qanda-item__question-wrapper {
   padding-right: 1.2813em;
+  cursor: pointer;
+
+  @include mq("md") {
+    padding-right: 0.8em;
+  }
 }
 
 .qanda-item__question {
   line-height: 1.6875;
   font-weight: 500;
-  padding: 1.4375em 0;
+  padding: 1.4375em 1.5625em 1.4375em 0em;
   position: relative;
 
   &::before {
@@ -958,6 +1000,16 @@ $layer: (
     transform: translateY(-50%) rotateZ(90deg);
     background: $primary-color;
     transition: all ease 0.3s;
+  }
+
+  @include mq("sm") {
+    font-size: 0.875em;
+    padding: 1em 1.5625em 1em 0em;
+
+    &::before,
+    &::after {
+      width: 18px;
+    }
   }
 }
 
@@ -1252,13 +1304,12 @@ $layer: (
 //  copyright
 // =======================
 
-.copyright-wrapper{
-
-  @include mq("md"){
+.copyright-wrapper {
+  @include mq("md") {
     padding-bottom: 78px;
   }
 
-  @include mq("sm"){
+  @include mq("sm") {
     padding-bottom: 65px;
   }
 }
@@ -1276,7 +1327,7 @@ $layer: (
 //  fixed buttons
 // =======================
 
-.fixed-buttons-container{
+.fixed-buttons-container {
   position: fixed;
   height: 78px;
   bottom: 0;
@@ -1284,25 +1335,25 @@ $layer: (
   left: 0;
   z-index: 150;
   background: #fff;
-  padding: .8em 0;
+  padding: 0.8em 0;
 
-  @include mq("sm"){
+  @include mq("sm") {
     height: 65px;
     padding: 0.6em 0;
   }
 }
 
-.fixed-buttons-container__contents{
+.fixed-buttons-container__contents {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.fixed-buttons-container__wrapper{
+.fixed-buttons-container__wrapper {
   flex: 0 1 auto;
 }
 
-.fixed-buttons-container__wrapper:first-child{
+.fixed-buttons-container__wrapper:first-child {
   margin-right: 2em;
 }
 

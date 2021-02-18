@@ -17,3 +17,14 @@ $(function () {
       }
   });
 });
+
+$(function () {
+  $('.qanda-item__question-wrapper').on('click', function() {
+
+    $(this).next().slideToggle();
+    $icon = $(this).children('.qanda-item__question');
+    $icon.toggleClass('open');
+
+  });
+});
+
