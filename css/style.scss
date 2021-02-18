@@ -222,10 +222,10 @@ $layer: (
     top: 0;
     left: 0;
     right: 0;
-    background: #FFFFFF1A;
     padding: 0.9375em 0;
     width: 100%;
     z-index: map-get($layer, header);
+    background: #fff;
     
 
     @include mq('sp'){
@@ -621,6 +621,10 @@ body.fixed{
 // =======================
 //  price
 // =======================
+
+.price{
+  padding-bottom: 2.4375em;
+}
 
 .price__contents{
   background: url(../images/price.png);
