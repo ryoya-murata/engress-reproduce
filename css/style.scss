@@ -83,8 +83,8 @@ $breakpoints: (
   margin-bottom: 1.2778em;
   font-weight: bold;
 
-  @include mq("sm") {
-    font-size: 1.875em;
+  @include mq("md") {
+    font-size: 1.5em;
     line-height: 1.3333;
     margin-bottom: 1.2em;
   }
@@ -583,8 +583,12 @@ $layer: (
 .introduce__ex-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 4.5313em;
+
+  @include mq("md"){
+    margin-bottom: 3em;
+  }
 }
 
 .introduce__ex-item {
@@ -596,6 +600,11 @@ $layer: (
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include mq("md"){
+    font-size: 1em;
+    margin-right: 2em;
   }
 }
 
@@ -615,6 +624,10 @@ $layer: (
   font-weight: bold;
   line-height: 1.3889;
   margin-bottom: 0.5em;
+
+  @include mq("md"){
+    font-size: 1.25em;
+  }
 }
 
 .title__caution {
@@ -631,6 +644,10 @@ $layer: (
 .introduce__contents-desc {
   font-size: 1.125em;
   line-height: 1.7222;
+
+  @include mq("md"){
+    font-size: 1em;
+  }
 }
 
 // =======================
