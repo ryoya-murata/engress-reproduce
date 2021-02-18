@@ -971,3 +971,138 @@ body.fixed{
   transition: all ease .3s;
 }
 
+// =======================
+//  tel
+// =======================
+
+.tel{
+  text-align: center;
+  padding: .8319em 0 .8556em;
+}
+
+
+
+
+.tel__desc{
+  line-height: 1.6875;
+}
+
+.tel__sales-time{
+  line-height: 1.6875;
+}
+
+.tel__number{
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 1.3889;
+  position: relative;
+  display: inline-block;
+
+
+  &::before,&::after{
+    position: absolute;
+    font-size: 0.4444em;
+    line-height: 1.6875;
+    bottom: 7px;
+
+    @include mq('sp'){
+      display: none;
+    }
+  }
+
+  &::before{
+    content: "お電話でのお問い合わせはこちら";
+    left: -260px;
+  }
+
+  &::after{
+    content: "平日 08:00~20:00";
+    right: -152px;
+    font-weight: 500;
+  }
+}
+
+// =======================
+//  footer
+// =======================
+
+.footer{
+  background: $primary-color;
+  padding: 2.1875em 0 4.04em;
+  color: #fff;
+}
+
+.footer__contents{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__info-wrapper{
+  text-align: right;
+}
+
+.footer__logo-wrapper{
+  width: 197px;
+  background: #fff;
+  padding: .875em .8421em .8125em;
+  margin-bottom: 1.3438em;
+  margin-right: -17px;
+}
+
+.footer__tel{
+  margin-bottom: 0.2188em;
+}
+
+.tel--right{
+  text-align: right;
+}
+
+.footer__sale-time{
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 1.6668;
+}
+
+.menu__item--separated{
+  margin-right: 0;
+  padding-left: 1.3438em;
+  padding-right: 1.3438em;
+  position: relative;
+
+  &::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) ;
+    background: #fff;
+  }
+
+  &:first-child{
+    padding-left: 0;
+  }
+
+  &:last-child{
+    padding-right: 0;
+
+    &::after{
+      width: 0px;
+    }
+  }
+}
+
+.menu__link--footer{
+  line-height: 1.6875;
+}
+
+.copyright{
+  margin-right: -17px;
+  padding: .75em 0 ;
+  font-size: 0.75em;
+  line-height: 1.6667;
+  font-weight: bold;
+  text-align: right;
+}
