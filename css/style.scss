@@ -1045,10 +1045,18 @@ $layer: (
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @include mq("md"){
+    display: block;
+  }
 }
 
 .posts-contents__blog {
   flex: 0 1 47.7778%;
+
+  @include mq("md"){
+    padding-bottom: 0;
+  }
 }
 
 .blog-items_item {
@@ -1120,6 +1128,10 @@ $layer: (
 .news-items__item {
   margin-bottom: 1.0625em;
   height: 87px;
+
+  @include mq("md"){
+    height: 74px;
+  }
 }
 
 .news-item__link {
