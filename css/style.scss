@@ -661,6 +661,14 @@ $layer: (
   &:nth-of-type(2n) {
     flex-direction: row-reverse;
   }
+
+  @include mq("md"){
+    flex-direction: column-reverse;
+
+    &:nth-of-type(2n) {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .strength-item__intro-wrapper {
@@ -669,14 +677,26 @@ $layer: (
 
 .strength-item__intro-wrapper--margin_right {
   margin-right: 5.5556%;
+
+  @include mq("md"){
+    margin-right: 0;
+  }
 }
 
 .strength-item__intro-wrapper--margin_left {
   margin-left: 5.5556%;
+
+  @include mq("md"){
+    margin-left: 0;
+  }
 }
 
 .strength-item__img-wrapper {
   flex: 0 1 38.8889%;
+
+  @include mq("md"){
+    margin-bottom: 1.5em;
+  }
 }
 
 .strength-item__tag {
@@ -687,6 +707,10 @@ $layer: (
   color: #fff;
   background: $color-yellow;
   margin-bottom: 1.7813em;
+
+  @include mq("md"){
+    margin-bottom: 1em;
+  }
 }
 
 .strength-item__title {
@@ -694,11 +718,20 @@ $layer: (
   line-height: 1.3846;
   font-weight: bold;
   margin-bottom: 1.0385em;
+
+  @include mq("md"){
+    font-size: 1.25em;
+    margin-bottom: .5em;
+  }
 }
 
 .strength-item__desc {
   line-height: 1.6875;
   font-weight: 500;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 // =======================
@@ -721,6 +754,10 @@ $layer: (
   margin-bottom: 0.7885em;
   line-height: 1.5;
   text-align: center;
+
+  @include mq("md"){
+    font-size: 1.125em;
+  }
 }
 
 .price__button {
@@ -728,6 +765,10 @@ $layer: (
   padding: 0.6563em 2.75em;
   line-height: 1.6875;
   border: 1px solid #fff;
+
+  @include mq("md"){
+    padding: .4em 2em;
+  }
 }
 
 // =======================
@@ -736,6 +777,10 @@ $layer: (
 
 .example-items {
   display: flex;
+
+  @include mq("md"){
+    display: block;
+  }
 }
 
 .example-item {
@@ -745,12 +790,23 @@ $layer: (
   &:last-child {
     margin-right: 0;
   }
+
+  @include mq("md"){
+   margin-right: 0;
+   margin-bottom: 3em;
+  }
 }
+
+
 
 .example-item__comment {
   line-height: 1.8125;
   color: #fff;
   margin-bottom: 0.4063em;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 .example-item__img-wrapper {
@@ -782,6 +838,10 @@ $layer: (
   line-height: 1.8125;
   padding: 0.0938em 0 0.0938em 0.625em;
   font-weight: 500;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 .example-item__name {
@@ -790,6 +850,10 @@ $layer: (
   line-height: 1.8125;
   padding: 0.0938em 0 0.0938em 0.875em;
   font-weight: 500;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 .example-item__result {
@@ -798,6 +862,10 @@ $layer: (
   line-height: 1.8125;
   padding: 0.0938em 0 0.0938em 0.875em;
   font-weight: 500;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 // =======================
