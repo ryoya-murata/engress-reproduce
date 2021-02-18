@@ -16,7 +16,7 @@
                 <div class="header__logo-wrapper">
                   <img src="./images/logo.png" alt="Engress" class="header__logo">
                 </div><!-- /.header__logo-wrapper -->
-                <nav class="header__nav nav">
+                <nav class="header__nav nav is-lg">
                    <ul class="menu">
                       <li class="menu__item"><a href="#" class="menu__link">ホーム</a><!-- /.menu__link --></li><!-- /.menu__item -->
                       <li class="menu__item"><a href="#" class="menu__link">お知らせ</a><!-- /.menu__link --></li><!-- /.menu__item -->
@@ -25,7 +25,25 @@
                    </ul><!-- /.menu -->
                 </nav><!-- /.header__nav nav nav--blue -->
              </div><!-- /.header__contents -->
-             <div class="header__info-wrapper">
+             <div class="hamberger is-md">
+					<div class="hamberger__line-wrapper">
+						<span class="hamberger__line"></span>
+						<span class="hamberger__line"></span>
+						<span class="hamberger__line"></span>
+					</div>
+				</div>
+            <nav class="hamberger-menu is-md">
+               <h2 class="hamberger-menu__title">メニュー</h2><!-- /.hamberger-menu__title -->
+               <ul class="menu">
+                  <li class="hamberger-menu__item"><a href="#" class="hamberger-menu__link">ホーム</a><!-- /.--></li><!-- /.-->
+                  <li class="hamberger-menu__item"><a href="#" class="hamberger-menu__link">お知らせ</a><!-- /.--></li><!-- /.-->
+                  <li class="hamberger-menu__item"><a href="#" class="hamberger-menu__link">ブログ</a><!-- /.--></li><!-- /.-->
+                  <li class="hamberger-menu__item"><a href="#" class="hamberger-menu__link">コース・料金</a><!-- /.--></li><!-- /.-->
+               </ul><!-- /.menu -->
+               <h2 class="hamberger-menu__title">電話番号</h2><!-- /.hamberger-menu__title -->
+               <p class="hamberger__tel tel tel--color_primary"><img src="./images/tel.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.header__tel tel tel--color_primary -->
+            </nav>
+             <div class="header__info-wrapper is-lg">
                 <div class="header__info">
                    <p class="header__sale-time">平日08:00〜20:00</p><!-- /.header__sale-time -->
                    <p class="header__tel tel tel--color_primary"><img src="./images/tel.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.header__tel tel tel--color_primary -->
@@ -41,7 +59,11 @@
              </div><!-- /.header__infomation-wrapper -->
           </div><!-- /.header__contents-wrapper -->
        </div><!-- /.inner inner--wide header__inner -->
+
+       
     </header><!-- /.header -->
+
+    
 
     <div class="first-view">
        <div class="inner inner--narrow">
@@ -379,6 +401,23 @@
        </div><!-- /.inner inner--middle -->
     </div><!-- /.copyright-wrapper -->
 
+    <div class="fixed-buttons-container is-md">
+       <div class="inner">
+         <div class="fixed-buttons-container__contents">
+            <div class="fixed-button-wrapper fixed-buttons-container__wrapper">
+               <a href="#" class="button button--color_yellow button--shape_circle button--size_s button--request">資料請求</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
+          </div><!-- /.fixed-button-wrapper fixed-buttons-container__wrapper -->
+          <div class="fixed-button-wrapper fixed-buttons-container__wrapper">
+            <a href="#" class="button button--color_primary button--shape_circle button--size_s button--inquiry">お問い合わせ</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
+       </div><!-- /.fixed-button-wrapper fixed-buttons-container__wrapper -->
+         </div><!-- /.fixed-buttons-container__contents -->
+       </div><!-- /.inner -->
+    </div><!-- /.fixed-buttons-container -->
+
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
