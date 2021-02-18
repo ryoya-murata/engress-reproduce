@@ -121,7 +121,9 @@ $breakpoints: (
   line-height: 1.8125;
   padding: 0.9688em 0;
 
-  @include mq("sm") {
+  @include mq("md") {
+    width: auto;
+    padding: .5em 5em;
     font-size: 1.125em;
   }
 }
@@ -518,10 +520,18 @@ $layer: (
 // =======================
 
 .first-view {
-  margin-top: 5em;
+  margin-top: 80px;
   padding-top: 6.7188em;
   padding-bottom: 5.0313em;
   background: url(../images/teachers.png) no-repeat center top / cover;
+
+  @include mq("lg"){
+    margin-top: 70px;
+  }
+
+  @include mq("md"){
+    margin-top: 50px;
+  }
 }
 
 .first-view__title {
@@ -532,6 +542,10 @@ $layer: (
   box-shadow: 0px 3px 3px #00000029;
   text-align: center;
   margin-bottom: 0.2708em;
+
+  @include mq("md"){
+    font-size: 2.255em;
+  }
 }
 
 .first-view__desc {
@@ -541,6 +555,10 @@ $layer: (
   line-height: 1.7222;
   text-align: center;
   margin-bottom: 2.4722em;
+
+  @include mq("md"){
+    font-size: 1em;
+  }
 }
 
 .first-view__button-wrapper {
