@@ -1758,7 +1758,8 @@ $layer: (
 
 
   @include mq("lg"){
-    margin-right: 7px;
+    box-sizing: content-box;
+    padding-right: 7px;
   }
 }
 
