@@ -1506,7 +1506,6 @@ $layer: (
   padding: 0.8em 0;
 
   @include mq("sm") {
-    // height: 65px;
     padding: 0.6em 0;
   }
 }
@@ -1518,27 +1517,31 @@ $layer: (
 }
 
 .fixed-buttons-container__wrapper {
-  flex: 0 1 auto;
+  flex: 0 1 40%;
+
+  &:first-child{
+    margin-right: 4%;
+  }
 }
 
-.fixed-buttons-container__wrapper:first-child {
-  margin-right: 2em;
-}
+
 
 .button--footer-inquiry{
-  padding: .4em 2em;
+  padding: .8em 2em;
+  width: 100%;
 
 
   @include mq("sm"){
-    padding: .4em 1em;
+    padding: .6em 1em;
   }
 }
 
 .button--footer-request{
-  padding: .4em 3em;
+  padding: .8em 3em;
+  width: 100%;
 
   @include mq("sm"){
-    padding: .4em 1.4em;
+    padding: .6em 1.4em;
   }
 }
 
