@@ -855,6 +855,7 @@ $layer: (
 
 .example-items {
   display: flex;
+  align-items: flex-end;
 }
 
 .example-item {
@@ -887,16 +888,9 @@ $layer: (
   color: #fff;
   width: 100%;
 
-  @include mq("lg") {
-    min-height: 87px;
-  }
-
-  @include mq("md") {
-    min-height: 58px;
-  }
+ 
 
   @include mq("sm") {
-    min-height: 75px;
     font-size: 0.875em;
   }
 }
