@@ -1935,7 +1935,6 @@ $layer: (
 //  blog-single
 // =======================
 
-
 .blog-single-contents__inner {
   max-width: 895px;
   margin-right: auto;
@@ -2262,70 +2261,92 @@ $layer: (
 //  news-archive
 // =======================
 
-.news-archive__contents{
+.news-archive__contents {
   margin-bottom: 4.0625em;
 }
 
-.news-archive-items__item{
+.news-archive-items__item {
   display: block;
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #d5d5d5;
 
-  &:first-child{
-    border-top: 1px solid #D5D5D5;
+  &:first-child {
+    border-top: 1px solid #d5d5d5;
   }
 }
 
-.news-archive-item__contents{
+.news-archive-item__contents {
   padding: 1.0625em 1.7813em 1.0625em 0;
   display: flex;
 
-  @include mq("md"){
-    padding: .8em 1em .8em 0;
+  @include mq("md") {
+    padding: 0.8em 1em 0.8em 0;
   }
 
-  @include mq("sm"){
+  @include mq("sm") {
     display: block;
   }
 }
 
-.news-archive-item__time-wrapper{
+.news-archive-item__time-wrapper {
   flex: 0 0 85px;
   margin-right: 3.1875em;
 
-  @include mq("md"){
+  @include mq("md") {
     margin-right: 1.5em;
   }
 
-  @include mq("sm"){
+  @include mq("sm") {
     margin-right: 0;
   }
 }
 
-.news-archive-item__time{
+.news-archive-item__time {
   font-weight: 500;
   display: block;
   line-height: 1.875;
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 0.875em;
   }
 }
 
-.news-archive-item__title-wrapper{
+.news-archive-item__title-wrapper {
   flex: 0 1 auto;
 }
 
-.news-archive-item__title{
+.news-archive-item__title {
   font-weight: 500;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-decoration-color: $primary-color;
 
-  @include mq("md"){
+  @include mq("md") {
     font-size: 0.875em;
   }
 }
 
-.page-navi{
+.page-navi {
   text-align: center;
+}
+
+// =======================
+//  news-single
+// =======================
+
+.news-single__title {
+  font-size: 1.75em;
+  line-height: 1.7143;
+  margin-bottom: 1.2857em;
+  font-weight: bold;
+}
+
+.news-single__time-wrapper {
+  text-align: right;
+  margin-bottom: 3em;
+}
+
+.news-single__time {
+  line-height: 1.6875;
+  font-weight: 500;
+  display: inline-block;
 }
