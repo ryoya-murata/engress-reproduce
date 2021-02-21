@@ -190,6 +190,18 @@ a {
   }
 }
 
+.breadcrumb-wrapper--mt{
+  margin-top: 80px;
+  @include mq("lg") {
+    margin-top: 70px;
+  }
+
+  @include mq("md") {
+    margin-top: 50px;
+  }
+}
+
+
 // =======================
 //  z-index
 // =======================
@@ -2645,3 +2657,23 @@ label[for=request]{
 }
 
 
+
+// =======================
+//  complete
+// =======================
+
+.complete-contents{
+  padding: 4.8438em 0 4.6875em;
+}
+
+.complete-contents__message{
+  line-height: 1.6875;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4.8438em;
+}
+
+.complete-contents__button{
+  font-weight: 500;
+  text-decoration: underline;
+}
