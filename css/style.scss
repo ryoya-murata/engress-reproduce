@@ -350,6 +350,10 @@ $layer: (
   width: 10px;
   vertical-align: middle;
   margin-right: 0.3125em;
+
+  @include mq("md"){
+    vertical-align: baseline;
+  }
 }
 
 .header__buttons-wrapper {
@@ -530,8 +534,16 @@ $layer: (
 }
 
 .hamberger__tel {
-  padding: 0.4em 0 0.8em 1em;
+  display: inline-block;
+  padding: 0.4em 0 0.2em 1em;
   font-size: 1em;
+}
+
+.hamberger__sale-time {
+  display: inline-block;
+  padding: 0.4em 0 0.2em 1em;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 // =======================
@@ -659,6 +671,8 @@ $layer: (
     transparent 82%,
     transparent 100%
   );
+
+  
 }
 
 .introduce__contents-desc {
@@ -1205,6 +1219,10 @@ $layer: (
   -webkit-text-decoration-color: $primary-color;
   text-decoration-color: $primary-color;
   text-decoration-thickness: 1px;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 .blog-item__time {
@@ -1228,6 +1246,8 @@ $layer: (
   @include mq("md") {
     height: 74px;
   }
+
+  
 }
 
 .news-item__link {
@@ -1250,6 +1270,10 @@ $layer: (
   -webkit-text-decoration-color: $primary-color;
   text-decoration-color: $primary-color;
   text-decoration-thickness: 1px;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 // =======================
@@ -2354,6 +2378,14 @@ $layer: (
   line-height: 1.7143;
   margin-bottom: 1.2857em;
   font-weight: bold;
+
+  @include mq("md"){
+    font-size: 1.5em;
+  }
+
+  @include mq("sm"){
+    font-size: 1.25em;
+  }
 }
 
 .news-single__time-wrapper {
@@ -2365,6 +2397,10 @@ $layer: (
   line-height: 1.6875;
   font-weight: 500;
   display: inline-block;
+
+  @include mq("md"){
+    font-size: 0.875em;
+  }
 }
 
 // =======================
