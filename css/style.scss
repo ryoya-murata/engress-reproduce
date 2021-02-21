@@ -659,6 +659,8 @@ $layer: (
     transparent 82%,
     transparent 100%
   );
+
+  
 }
 
 .introduce__contents-desc {
@@ -1205,6 +1207,10 @@ $layer: (
   -webkit-text-decoration-color: $primary-color;
   text-decoration-color: $primary-color;
   text-decoration-thickness: 1px;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 .blog-item__time {
@@ -1228,6 +1234,8 @@ $layer: (
   @include mq("md") {
     height: 74px;
   }
+
+  
 }
 
 .news-item__link {
@@ -1250,6 +1258,10 @@ $layer: (
   -webkit-text-decoration-color: $primary-color;
   text-decoration-color: $primary-color;
   text-decoration-thickness: 1px;
+
+  @include mq("sm"){
+    font-size: 0.875em;
+  }
 }
 
 // =======================
